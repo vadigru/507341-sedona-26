@@ -9,159 +9,110 @@
 <body>
 
   <header>
-    <nav>
-      <a href="index.html">
-        <img src="img/logo.png" width="140" height="72" alt="Эмблема городка Седона">
+    <nav class="nav">
+      <a class="nav__link" href="index.html">
+        <img class="nav__logo" src="img/logo.png" width="140" height="72" alt="Эмблема городка Седона">
       </a>
-      <ul>
-        <li><a href="">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
-        <li><a href="">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="">Информация</a></li>
+        <li class="nav__list-item"><a href="">Фото и видео</a></li>
+        <li class="nav__list-item"><a href="">Карта штата</a></li>
+        <li class="nav__list-item"><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <img src="img/welcome.png" alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!">
-      <h1>
-        Седона — небольшой городок в Аризоне,<br>
-        заслуживающий большего!
-      </h1>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <section class="intro">
+      <!-- Картинка Welcome to the gorgeous Sedona Because the Grand Canyon sucks! -->
+      <h1 class="intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
 
-    <section>
-      <h2>Преимущества Седоны</h2>
-      <ul>
-        <li>
-          <div>
-            <h3>
-              Настоящий<br>
-              городок
-            </h3>
-            <span>- №1 -</span>
-            <p>
-              Седона — не аттракцион для туристов,<br>
-              там течёт своя жизнь
-            </p>
+    <section class="about">
+      <h2 class="visually-hidden">Преимущества Седоны</h2>
+      <ul class="about__list">
+        <li class="about">
+          <div class="about__first">
+            <h3 class="about__heading">Настоящий городок</h3>
+            <span class="about__number">- №1 -</span>
+            <p class="about__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <div>
-            <img src="https://via.placeholder.com/800x255" width="800" height="255" alt="Вид города">
+          <div class="about__first-bg">
+            <!-- Неконтентное изображение вида города Седона -->
           </div>
         </li>
-        <li>
-          <div>
-            <h3>Жилье</h3>
-            <img src="https://via.placeholder.com/75x75" width="75" height="75" alt="Пиктограмма дом">
-            <p>
-              Рекомендуем пожить в настоящем<br>
-              мотеле, всё как в кино!
-            </p>
+        <li class="about">
+          <div class="about__first-housing">
+            <!-- Пиктограмма дом -->
+            <h3 class="about__heading">Жилье</h3>
+            <p class="about__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </div>
-          <div>
-            <h3>Еда</h3>
-            <img src="https://via.placeholder.com/75x75" width="75" height="75" alt="Пиктограмма бургер">
-            <p>
-              Всегда заказывайте фирменный бургер,<br>
-              вы не разочаруетесь!
-            </p>
+          <div class="about__first-food">
+            <!-- Пиктограмма бургер -->
+            <h3 class="about__heading">Еда</h3>
+            <p class="about__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div>
-            <h3>Сувениры</h3>
-            <img src="https://via.placeholder.com/75x75" width="75" height="75" alt="Пиктограмма подарочная коробка">
-            <p>
-              Не только китайского, но и местного<br>
-              производства!
-            </p>
+          <div class="about__first-gift">
+            <!-- Пиктограмма подарочная коробка -->
+            <h3 class="about__heading">Сувениры</h3>
+            <p class="about__text">Не только китайского, но и местного производства!</p>
           </div>
         </li>
-        <li>
-          <div>
-            <img src="https://via.placeholder.com/800x255" width="800" height="255" alt="Вид моста дьявола">
+        <li class="about__second">
+          <div class="about__second-bg">
+            <!-- Неконтентное изображение вида моста дьявола -->
           </div>
-          <div>
-            <h3>
-              Там есть<br>
-              мост дьявола
-            </h3>
-            <span>- №2 -</span>
-            <p>
-              Да, по нему можно пройти! Если конечно<br>
-              вы осмелитесь
-            </p>
+          <div class="about__second-brige">
+            <h3 class="about__heading">Там есть мост дьявола</h3>
+            <span class="about__number">- №2 -</span>
+            <p class="about__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </li>
-        <li>
-          <div>
-            <h3>
-              Небольшая<br>
-              площадь
-            </h3>
-            <span>- №3 -</span>
-            <p>
-              Все достопримечательности<br>
-              находятся очень близкоь
-            </p>
+        <li class="about__third">
+          <div class="about__third-square">
+            <h3 class="about__heading">Небольшая площадь</h3>
+            <span class="about__number">- №3 -</span>
+            <p class="about__text">Все достопримечательности находятся очень близко</p>
           </div>
-          <div>
-            <h3>
-              Красивая<br>
-              дорога
-            </h3>
-            <span>- №4 -</span>
-            <p>
-              Ехать в Седону из Лас-Вегаса совсем<br>
-              не скучно!
-              </p>
+          <div class="about__third-road">
+            <h3 class="about__heading">Красивая дорога</h3>
+            <span class="about__number">- №4 -</span>
+            <p class="about__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <div>
-            <h3>
-              Мало<br>
-              туристов
-            </h3>
-            <span>- №5 -</span>
-            <p>
-              Большинство едет в гранд каньо<br>
-              и толпится там
-            </p>
+          <div class="about__third-tourists">
+            <h3 class="about__heading">Мало туристов</h3>
+            <span class="about__number">- №5 -</span>
+            <p class="about__text">Большинство едет в гранд каньо и толпится там</p>
           </div>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Поиск гостиницы</h2>
-      <p>Заинтересовались?</p>
-      <p>
-        Укажите предполагаемые даты поездки,<br>
-        и мы покажем вам лучшие предложения гостиниц в седоне
-      </p>
-      <div>
-        <button type="button">Поиск гостиницы в седоне</button>
+    <section class="search">
+      <h2 class="visually-hidden">Поиск гостиницы</h2>
+      <p class="search__first-text">Заинтересовались?</p>
+      <p class="search__second-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        седоне</p>
+      <div class="search__form">
+        <button class="search__btn-toggle" type="button">Поиск гостиницы в седоне</button>
         <!-- Здесь будет форма поиска-->
-        <button>Найти</button>
+        <button class="search__btn">Найти</button>
       </div>
     </section>
-    <section>
-      <h2>Карта</h2>
-      <img src="https://via.placeholder.com/1200x460" width="1200" height="460" alt="Местоположение города Седона на карте">
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
     </section>
   </main>
 
   <footer>
-    <p>
-      #visitsedona
-    </p>
-    <ul>
-      <li><a href="">twitter</a></li>
-      <li><a href="">facebook</a></li>
-      <li><a href="">youtube</a></li>
+    <p class="hashtag">#visitsedona</p>
+    <ul class="social">
+      <li class="social__btn twitter"><a href="">twitter</a></li>
+      <li class="social__btn facebook"><a href="">facebook</a></li>
+      <li class="social__btn youtube"><a href="">youtube</a></li>
     </ul>
-    <p>
-      website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a>
-    </p>
+    <p class="academy">website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a></p>
   </footer>
 
 </body>
