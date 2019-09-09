@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
@@ -9,14 +8,14 @@
 <body>
   <header>
     <nav>
-      <a href="">
+      <a href="index.html">
         <img src="img/logo.png" width="140" height="72" alt="Эмблема городка Седона">
       </a>
       <ul>
         <li><a href="">Информация</a></li>
         <li><a href="">Фото и видео</a></li>
         <li><a href="">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+        <li><a>Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -26,20 +25,56 @@
     <h1>Отели Седоны</h1>
 
     <section>
-      <h2>Инфраструктура:</h2>
-      <!-- здесь будут формы фильтрации -->
-      <h2>Тип жилья:</h2>
-      <!-- здесь будут формы фильтрации -->
-      <h2>Стоимость в сутки (Р):</h2>
-      <!-- здесь будут формы фильтрации -->
+      <div>
+        <h2>Инфраструктура:</h2>
+        <ul>
+          <li>Бассейн</li>
+          <li>Парковка</li>
+          <li>Wi-Fi</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Тип жилья:</h2>
+        <ul>
+          <li>Гостиница</li>
+          <li>Мотель</li>
+          <li>Апартаменты</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Стоимость в сутки (Р):</h2>
+        <p>
+          <span>от 0</span>
+          <span>до 3000</span>
+        </p>
+        <span>слайдер</span>
+        <button>Показать</button>
+      </div>
+    </section>
+    <section>
+      <h2>Результаты поиска</h2>
+      <p>Найдено: 3</p>
+      <p>Сортировка:</p>
+      <ul>
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По рейтингу</li>
+      </ul>
+      <span>
+        <!-- стрелки сортировки -->
+      </span>
     </section>
 
     <section>
-      <h2>Список отелей</h2>
+      <h2>Список доступных отелей</h2>
       <ul>
         <li>
-          <a href=""><h3>Amara Resort & Spa</h3></a>
-          <a href=""><img src="https://via.placeholder.com/135x90" alt="Amara Resort & Spa"></a>
+          <h3>
+            <a href="">Amara Resort & Spa</a>
+          </h3>
+          <a href="">
+            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Изображение гостиницыAmara Resort & Spa">
+          </a>
           <p>
             <span>Гостиница</span>
             <span>от 4000 р.</span>
@@ -55,8 +90,12 @@
         </li>
 
         <li>
-          <a href=""><h3>Desert Quail Inn</h3></a>
-          <a href=""><img src="https://via.placeholder.com/135x90" alt="Desert Quail Inn"></a>
+          <h3>
+            <a href="">Desert Quail Inn</a>
+          </h3>
+          <a href="">
+            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Изображение мотеля Desert Quail Inn" >
+          </a>
           <p>
             <span>Мотель</span>
             <span>от 4000 р.</span>
@@ -72,8 +111,12 @@
         </li>
 
         <li>
-          <a href=""><h3>Villas at Poco Diablo</h3></a>
-          <a href=""><img src="https://via.placeholder.com/135x90" alt="Villas at Poco Diablo"></a>
+          <h3>
+            <a href="">Villas at Poco Diablo</a>
+          </h3>
+          <a href="">
+            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Изображение апартаментов Villas at Poco Diablo">
+          </a>
           <p>
             <span>Апартаменты</span>
             <span>от 4000 р.</span>
