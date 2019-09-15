@@ -14,7 +14,7 @@
         <img class="nav__logo" src="img/logo-sedona.svg" width="140" height="72" alt="Эмблема городка Седона">
       </a>
       <ul class="nav__list">
-        <li class="nav__list-item"><a href="">Информация</a></li>
+        <li class="nav__list-item"><a href="" >Информация</a></li>
         <li class="nav__list-item"><a href="">Фото и видео</a></li>
         <li class="nav__list-item"><a href="">Карта штата</a></li>
         <li class="nav__list-item"><a href="catalog.html">Гостиницы</a></li>
@@ -39,7 +39,7 @@
             <p class="about__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="about__first-bg">
-            <!-- Неконтентное изображение вида города Седона --> 
+            <!-- Неконтентное изображение вида города Седона -->
           </div>
         </li>
         <li class="about">
@@ -94,31 +94,55 @@
       <p class="search__first-text">Заинтересовались?</p>
       <p class="search__second-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
+      <a href="" class="search__btn-toggle">Поиск гостиницы в седоне</a>
       <div class="search__form">
-        <button class="search__btn-toggle" type="button">Поиск гостиницы в седоне</button>
-        <!-- Здесь будет форма поиска-->
-        <button class="search__btn">Найти</button>
+        <form action="https://echo.htmlacademy.ru" method="post" >
+          <p class="search__date">
+            <label class="search__label search__form-date-in" for="date-in">Дата заезда</label>
+            <input class="search__input" id="date-in" name="date-in" type="text" value="24 апреля 2017">
+          </p>
+          <p class="search__date">
+            <label class="search__label search__form-date-out" for="date-out">Дата выезда: </label>
+            <input class="search__input" id="date-out" name="date-out" type="text" value="4 июля 2017">
+          </p>
+          <div class="search__people-count">
+              <p class="search__adults">
+                  <label class="search__label search__label-adults" for="input-adults">Взрослые: </label>
+                  <button class="search__btn-minus" type="button" aria-label="Минус">-</button>
+                  <input class="search__input search__input-adults" id="input-adults" name="input-adults" type="text" value="2">
+                  <button class="search__btn-plus" type="button" aria-label="Плюс">+</button>
+                </p>
+                <p class="search__kids">
+                  <label class="search__label search__label-kids" for="input-kids">Дети: </label>
+                  <button class="search__btn-minus" type="button" aria-label="Минус">-</button>
+                  <input class="search__input search__input-kids" id="input-kids" name="input-kids" type="text" value="0">
+                  <button class="search__btn-plus" type="button" aria-label="Плюс">+</button>
+                </p>
+          </div>
+          <button class="search__btn" type="submit">Найти</button>
+        </form>
       </div>
     </section>
+
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
     </section>
   </main>
 
   <footer>
-      <p class="hashtag">#visitsedona</p>
-      <ul class="social">
-        <li class="social__btn twitter"><a href=""><img src="img/soc-twitter.svg" alt="Twitter"></a></li>
-        <li class="social__btn facebook"><a href=""><img src="img/soc-facebook.svg" alt="Facebook"></a></li>
-        <li class="social__btn youtube"><a href=""><img src="img/soc-youtube.svg" alt="Youtube"></a></li>
-      </ul>
-      <p class="academy">
-        website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип html академии">
-        </a>
-      </p>
-    </footer>
+    <p class="hashtag">#visitsedona</p>
+    <ul class="social">
+      <li class="social__btn twitter"><a href=""><img src="img/soc-twitter.svg" alt="Седона на Twitter"></a></li>
+      <li class="social__btn facebook"><a href=""><img src="img/soc-facebook.svg" alt="Седона на Facebook"></a></li>
+      <li class="social__btn youtube"><a href=""><img src="img/soc-youtube.svg" alt="Седона на Youtube"></a></li>
+    </ul>
+    <p class="academy">
+      website by
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
+      </a>
+    </p>
+  </footer>
 
 </body>
 
