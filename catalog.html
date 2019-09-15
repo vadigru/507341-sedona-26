@@ -22,82 +22,104 @@
   </header>
 
   <main>
-
     <h1 class="visually-hidden">Отели Седоны</h1>
-
     <section class="filter">
       <h2 class="visually-hidden">Фильтр отелей Седоны</h2>
 
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="filter-infrastructure">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="filter-infrastructure">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul class="filter__list">
               <li class="filter__list-item">
-                <input class="filter__input filter__input--checkbox" id="filter-swimming-pool" type="checkbox" name="infrastructure" value="swimming-pool" checked>
+                <input class="filter__input filter__input--checkbox" id="filter-swimming-pool" type="checkbox"
+                  name="infrastructure" value="swimming-pool" checked>
                 <label class="filter__label filter__label--checkbox" for="filter-swimming-pool">Бассейн</label>
               </li>
               <li class="filter__list-item">
-                <input class="filter__input filter__input--checkbox" id="filter-parking" type="checkbox" name="infrastructure" value="parking">
+                <input class="filter__input filter__input--checkbox" id="filter-parking" type="checkbox"
+                  name="infrastructure" value="parking">
                 <label class="filter__label filter__label--checkbox" for="filter-parking">Парковка</label>
               </li>
               <li class="filter__list-item">
-                <input class="filter__input filter__input--checkbox" id="filter-wi-fi" type="checkbox" name="infrastructure" value="wi-fi">
+                <input class="filter__input filter__input--checkbox" id="filter-wi-fi" type="checkbox"
+                  name="infrastructure" value="wi-fi">
                 <label class="filter__label filter__label--checkbox" for="filter-wi-fi">Wi-Fi</label>
               </li>
             </ul>
-
           </fieldset>
         </div>
 
-      <div class="filter-housing">
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <ul class="filter__list">
-            <li class="filter__list-item">
-              <input class="filter__input filter__input--checkbox" id="filter-hotel" type="checkbox" name="housing-type" value="hotel" checked>
-              <label class="filter__label filter__label--checkbox" for="filter-hotel">Гостиница</label>
-            </li>
-            <li class="filter__list-item">
-              <input class="filter__input filter__input--checkbox" id="filter-motel" type="checkbox" name="housing-type" value="motel" checked>
-              <label class="filter__label filter__label--checkbox" for="filter-motel">Мотель</label>
-            </li>
-            <li class="filter__list-item">
-              <input class="filter__input filter__input--checkbox" id="filter-appartament" type="checkbox" name="housing-type" value="appartament" checked>
-              <label class="filter__label filter__label--checkbox" for="filter-appartament">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
-
-      <div class="filter-range">
-        <h2 class="filter__heading">Стоимость в сутки (Р):</h2>
-        <p class="filter-range-block">
-          <span class="filter-range__min">от 0</span>
-          <span class="filter-range__max">до 3000</span>
-        </p>
-        <div class="filter-range__slider">
-          <button class="filter-range__btn filter-range__btn--left" type="button">левый ползунок</button>
-          <div class="filter-range__line"></div>
-          <button class="filter-range__btn filter-range__btn--right" type="button">правый ползунок</button>
+        <div class="filter-housing">
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul class="filter__list">
+              <li class="filter__list-item">
+                <input class="filter__input filter__input--checkbox" id="filter-hotel" type="checkbox"
+                  name="housing-type" value="hotel" checked>
+                <label class="filter__label filter__label--checkbox" for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter__list-item">
+                <input class="filter__input filter__input--checkbox" id="filter-motel" type="checkbox"
+                  name="housing-type" value="motel" checked>
+                <label class="filter__label filter__label--checkbox" for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter__list-item">
+                <input class="filter__input filter__input--checkbox" id="filter-appartament" type="checkbox"
+                  name="housing-type" value="appartament" checked>
+                <label class="filter__label filter__label--checkbox" for="filter-appartament">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
-      </div>
-      <button class="filter__btn" type="submit">Показать</button>
+
+        <div class="filter-range">
+          <h2 class="filter__heading">Стоимость в сутки (Р):</h2>
+          <div class="filter-range__block">
+            <label class="filter-range__min">
+              от
+              <input type="text" name="price-min" value="0">
+            </label>
+            <label class="filter-range__max">
+              до
+              <input type="text" name="price-max" value="3000">
+            </label>
+          </div>
+          <div class="filter-range__slider">
+            <button class="filter-range__btn filter-range__btn--left" type="button">левый ползунок</button>
+            <div class="filter-range__line"></div>
+            <button class="filter-range__btn filter-range__btn--right" type="button">правый ползунок</button>
+          </div>
+        </div>
+        <button class="filter__btn" type="submit">Показать</button>
       </form>
     </section>
 
     <section class="search">
       <h2 class="visually-hidden">Результаты поиска</h2>
-      <p class="search__result">Найдено: 3</p>
+      <p class="search__result">Найдено: <span class="search__result-amount">3</span></p>
       <p class="search__sorting">Сортировка:</p>
       <ul class="search__type">
-        <li class="search__type-item search__type-item--active">По цене</li>
-        <li class="search__type-item">По типу</li>
-        <li class="search__type-item">По рейтингу</li>
+        <li class="search__type-item search__type-item--active">
+          <a href="">По цене</a>
+        </li>
+        <li class="search__type-item">
+          <a href="">По типу</a>
+        </li>
+        <li class="search__type-item">
+          <a href="">По рейтингу</a>
+        </li>
       </ul>
-      <span class="search-sorting-arrows">
-        <!-- стрелки сортировки -->
-      </span>
+      <div class="search__sorting-arrows">
+        <a href="">
+          <span class="visually-hidden">По возрастанию</span>
+          <span class="search__arrow search__arrow-up"></span>
+        </a>
+        <a href="">
+          <span class="visually-hidden">По убыванию</span>
+          <span class="search__arrow search__arrow-down search__arrow--active"></span>
+        </a>
+      </div>
     </section>
 
     <section class="hotels">
@@ -108,7 +130,7 @@
             <h3 class="hotel__title"><a href="" aria-label="Amara Resort and Spa">Amara Resort & Spa</a></h3>
             <a class="hotel__link" href="">
               <img class="hotel__img" src="img/hotel-amara.jpg" width="135" height="90"
-              alt="Изображение гостиницы Amara Resort and Spa">
+                alt="Изображение гостиницы Amara Resort and Spa">
             </a>
             <p class="hotel-price-block">
               <span class="hotel__type">Гостиница</span>
@@ -116,10 +138,10 @@
             </p>
             <p class="hotel-btn-block">
               <a class="hotel__btn-more" href="">Подробнее</a>
-              <button class="hotel__btn-booking">Забронировать</button>
+              <a class="hotel__btn-booking" href="">Забронировать</a>
             </p>
             <p class="hotel-rating-block">
-              <!-- звезды -->
+              <span class="hotel__stars"></span>
               <span class="hotel__rating">рейтинг: 8.5</span>
             </p>
           </article>
@@ -138,10 +160,10 @@
             </p>
             <p class="hotel-btn-block">
               <a class="hotel__btn-more" href="">Подробнее</a>
-              <button class="hotel__btn-booking">Забронировать</button>
+              <a class="hotel__btn-booking" href="">Забронировать</a>
             </p>
             <p class="hotel-rating-block">
-              <!-- звезды -->
+              <span class="hotel__stars"></span>
               <span class="hotel__rating">рейтинг: 8.9</span>
             </p>
           </article>
@@ -154,16 +176,16 @@
               <img class="hotel__img" src="img/hotel-villas.jpg" width="135" height="90"
                 alt="Изображение апартаментов Villas at Poco Diablo">
             </a>
-            <p class="hotel-price-block">
+            <p class="hotel__price-block">
               <span class="hotel__type">Апартаменты</span>
               <span class="hotel__price">от 4000 р.</span>
             </p>
-            <p class="hotel-btn-block">
+            <p class="hotel__btn-block">
               <a class="hotel__btn-more" href="">Подробнее</a>
-              <button class="hotel__btn-booking">Забронировать</button>
+              <a class="hotel__btn-booking" href="">Забронировать</a>
             </p>
-            <p class="hotel-rating-block">
-              <!-- звезды -->
+            <p class="hotel__rating-block">
+              <span class="hotel__stars"></span>
               <span class="hotel__rating">рейтинг: 9.2</span>
             </p>
           </article>
