@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.about__list,
+.social__list,
+.nav__list,
+.filter__list,
+.filter-result__list,
+.hotels__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* links and buttons */
+.search__btn-toggle {
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.search__btn {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.filter-result__link {
+  text-decoration: underline dotted #81b3d2;
+  line-height: 18px;
+  color: #cccccc;
+}
+
+.hotel__btn-more,
+.hotel__btn-booking {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.hotel__btn-more {
+  background-color: #81b3d2;
+}
+
+.hotel__btn-booking {
+  background-color: #766357;
+}
+
+.social__btn {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #81B3D2;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* links and buttons states */
+.link-text:hover,
+.link-text:focus {
+  color: #81b3d2;
+}
+
+.link-text:active {
+  color: #cacaca;
+}
+
+.filter-result__link:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.btn-brown:hover,
+.btn-brown:focus {
+  background-color: #604E43;
+}
+
+.btn-brown:active {
+  color: #928A85;
+  background-color: #503E33;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+  background-color: #669EC0;
+}
+
+.btn-blue:active {
+  color: #94B9D2;
+  background-color: #5496BD;
+}
+
+.academy__link:hover path,
+.academy__link:focus path {
+  fill: #81B3D2;
+}
+
+.academy__link:active path {
+  fill: #BDBBBC;
+}
+
+.social__btn:active path {
+  fill: #88B6D1;
+  background-color: #5496BD;
+}
+
+/* current links */
+.nav__link--active {
+  color: #766357;
+}
+
+.filter-result__link--active {
+  text-decoration: none;
+  color: #81b3d2;
+}
+
+/* sedona index catalog navigation */
+.nav {
+  font-weight: bold;
+  line-height: 26px;
+  background-color: #ffffff;
+}
+
+/* sedona index intro */
+.intro {
+  text-align: center;
+  line-height: 26px;
+  background-color: #ffffff;
+}
+
+.intro__bg {
+  background-image: url(../img/intro-polygon.png),
+    url(../img/intro-welcome.png),
+    url(../img/intro-background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom -1px center,
+    top 75px center,
+    center center;
+  height: 660px;
+}
+
+.intro__title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/* sedona index about */
+.about__item {
+  line-height: 21px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.about__item-bg {
+  background-color: #eeeeee;
+}
+
+.about__first,
+.about__second-brige {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.about__first-housing::before {
+  content: url(../img/icon-housing.svg);
+}
+
+.about__first-food::before {
+  content: url(../img/icon-food.svg);
+}
+
+.about__first-gift::before {
+  content: url(../img/icon-giftbox.svg);
+}
+
+.about__first-bg {
+  content: url(../img/about-first-bg.jpg);
+}
+
+.about__second-bg {
+  content: url(../img/about-second-bg.jpg);
+}
+
+.about__heading {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/* sedona index hotel search  */
+.search {
+  text-align: center;
+  line-height: 26px;
+  background-color: #ffffff;
+}
+
+.search__first-text {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.search__second-text {
+  line-height: 24px;
+}
+
+.search__form {
+  display: none;
+}
+
+/* sedona catalog */
+.main,
+.social {
+  background-color: #ffffff;
+}
+
+/* sedona catalog filter */
+.filter {
+  background-image: url(../img/hotels-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.filter-result__find {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.filter-result__sorting,
+.filter-result__list-item {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* sedona catalog hotels */
+.hotel__title {
+  color: #000000;
+}
+
+.hotel-btn-block {
+  line-height: 18px;
+}
+
+.hotel__stars {
+  display: block;
+  background-image: url(../img/star.svg);
+  background-repeat: repeat-x;
+  height: 18px;
+}
+
+.hotel-1 {
+  width: calc(18px * 4);
+}
+
+.hotel-2 {
+  width: calc(18px * 3);
+}
+
+.hotel-3 {
+  width: calc(18px * 2);
+}
+
+/* footer */
+.social {
+  line-height: 26px;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.hashtag {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.facebook {
+  line-height: 55px;
+}
+
+.academy__link svg {
+  width: 115px;
+  height: 41px;
+}

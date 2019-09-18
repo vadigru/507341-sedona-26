@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,10 +16,10 @@
         <img class="nav__logo" src="img/logo-sedona.svg" width="140" height="72" alt="Эмблема городка Седона">
       </a>
       <ul class="nav__list">
-        <li class="nav__list-item"><a href="" >Информация</a></li>
-        <li class="nav__list-item"><a href="">Фото и видео</a></li>
-        <li class="nav__list-item"><a href="">Карта штата</a></li>
-        <li class="nav__list-item"><a href="catalog.html">Гостиницы</a></li>
+        <li class="nav__item"><a class="link-text nav__link" href="">Информация</a></li>
+        <li class="nav__item"><a class="link-text nav__link" href="">Фото и видео</a></li>
+        <li class="nav__item"><a class="link-text nav__link" href="">Карта штата</a></li>
+        <li class="nav__item"><a class="link-text nav__link" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -25,11 +27,14 @@
   <main>
     <section class="intro">
       <!-- Картинка Welcome to the gorgeous Sedona Because the Grand Canyon sucks! -->
+      <div class="intro__bg">
+
+      </div>
       <h1 class="intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
 
-    <section class="about">
+    <section class="about__item">
       <h2 class="visually-hidden">Преимущества Седоны</h2>
       <ul class="about__list">
         <li class="about">
@@ -39,29 +44,24 @@
             <p class="about__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="about__first-bg">
-            <!-- Неконтентное изображение вида города Седона -->
           </div>
         </li>
-        <li class="about">
-          <div class="about__first-housing">
-            <!-- Пиктограмма дом -->
-            <h3 class="about__heading">Жилье</h3>
-            <p class="about__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </div>
-          <div class="about__first-food">
-            <!-- Пиктограмма бургер -->
-            <h3 class="about__heading">Еда</h3>
-            <p class="about__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </div>
-          <div class="about__first-gift">
-            <!-- Пиктограмма подарочная коробка -->
-            <h3 class="about__heading">Сувениры</h3>
-            <p class="about__text">Не только китайского, но и местного производства!</p>
-          </div>
+        <li class="about__item">
+            <div class="about__first-housing">
+              <h3 class="about__heading">Жилье</h3>
+              <p class="about__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+            <div class="about__first-food">
+              <h3 class="about__heading">Еда</h3>
+              <p class="about__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="about__first-gift">
+              <h3 class="about__heading">Сувениры</h3>
+              <p class="about__text">Не только китайского, но и местного производства!</p>
+            </div>
         </li>
-        <li class="about__second">
+        <li class="about__item">
           <div class="about__second-bg">
-            <!-- Неконтентное изображение вида моста дьявола -->
           </div>
           <div class="about__second-brige">
             <h3 class="about__heading">Там есть мост дьявола</h3>
@@ -69,22 +69,22 @@
             <p class="about__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </li>
-        <li class="about__third">
-          <div class="about__third-square">
-            <h3 class="about__heading">Небольшая площадь</h3>
-            <span class="about__number">- №3 -</span>
-            <p class="about__text">Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="about__third-road">
-            <h3 class="about__heading">Красивая дорога</h3>
-            <span class="about__number">- №4 -</span>
-            <p class="about__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="about__third-tourists">
-            <h3 class="about__heading">Мало туристов</h3>
-            <span class="about__number">- №5 -</span>
-            <p class="about__text">Большинство едет в гранд каньо и толпится там</p>
-          </div>
+        <li class="about__item about__item-bg">
+            <div class="about__square">
+              <h3 class="about__heading">Небольшая площадь</h3>
+              <span class="about__number">- №3 -</span>
+              <p class="about__text">Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="about__road">
+              <h3 class="about__heading">Красивая дорога</h3>
+              <span class="about__number">- №4 -</span>
+              <p class="about__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="about__tourists">
+              <h3 class="about__heading">Мало туристов</h3>
+              <span class="about__number">- №5 -</span>
+              <p class="about__text">Большинство едет в гранд каньо и толпится там</p>
+            </div>
         </li>
       </ul>
     </section>
@@ -94,9 +94,9 @@
       <p class="search__first-text">Заинтересовались?</p>
       <p class="search__second-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
-      <a href="" class="search__btn-toggle">Поиск гостиницы в седоне</a>
+      <a class="btn-brown search__btn-toggle" href="">Поиск гостиницы в седоне</a>
       <div class="search__form">
-        <form action="https://echo.htmlacademy.ru" method="post" >
+        <form action="https://echo.htmlacademy.ru" method="post">
           <p class="search__date">
             <label class="search__label search__form-date-in" for="date-in">Дата заезда</label>
             <input class="search__input" id="date-in" name="date-in" type="text" value="24 апреля 2017">
@@ -106,20 +106,21 @@
             <input class="search__input" id="date-out" name="date-out" type="text" value="4 июля 2017">
           </p>
           <div class="search__people-count">
-              <p class="search__adults">
-                  <label class="search__label search__label-adults" for="input-adults">Взрослые: </label>
-                  <button class="search__btn-minus" type="button" aria-label="Минус">-</button>
-                  <input class="search__input search__input-adults" id="input-adults" name="input-adults" type="text" value="2">
-                  <button class="search__btn-plus" type="button" aria-label="Плюс">+</button>
-                </p>
-                <p class="search__kids">
-                  <label class="search__label search__label-kids" for="input-kids">Дети: </label>
-                  <button class="search__btn-minus" type="button" aria-label="Минус">-</button>
-                  <input class="search__input search__input-kids" id="input-kids" name="input-kids" type="text" value="0">
-                  <button class="search__btn-plus" type="button" aria-label="Плюс">+</button>
-                </p>
+            <p class="search__adults">
+              <label class="search__label search__label-adults" for="input-adults">Взрослые: </label>
+              <button class="search__btn-minus" type="button" aria-label="Минус">-</button>
+              <input class="search__input search__input-adults" id="input-adults" name="input-adults" type="text"
+                value="2">
+              <button class="search__btn-plus" type="button" aria-label="Плюс">+</button>
+            </p>
+            <p class="search__kids">
+              <label class="search__label search__label-kids" for="input-kids">Дети: </label>
+              <button class="search__btn-minus" type="button" aria-label="Минус">-</button>
+              <input class="search__input search__input-kids" id="input-kids" name="input-kids" type="text" value="0">
+              <button class="search__btn-plus" type="button" aria-label="Плюс">+</button>
+            </p>
           </div>
-          <button class="search__btn" type="submit">Найти</button>
+          <button class="btn-blue search__btn" type="submit">Найти</button>
         </form>
       </div>
     </section>
@@ -129,17 +130,37 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="social">
     <p class="hashtag">#visitsedona</p>
-    <ul class="social">
-      <li class="social__btn twitter"><a href=""><img src="img/soc-twitter.svg" alt="Седона на Twitter"></a></li>
-      <li class="social__btn facebook"><a href=""><img src="img/soc-facebook.svg" alt="Седона на Facebook"></a></li>
-      <li class="social__btn youtube"><a href=""><img src="img/soc-youtube.svg" alt="Седона на Youtube"></a></li>
+    <ul class="social__list">
+      <li>
+        <a class="btn-blue social__btn twitter" href="">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15">
+            <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="btn-blue social__btn facebook" href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22">
+            <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="btn-blue social__btn youtube" href="">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16">
+            <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
+          </svg>
+        </a>
+      </li>
     </ul>
     <p class="academy">
       website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
+      <a class="academy__link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
+          <path d="M46.84 28.22a2.07 2.07 0 0 0 .58-.11v1.4a3.41 3.41 0 0 1-1.24.22 1.75 1.75 0 0 1-1.75-1 5.08 5.08 0 0 1-3.3 1.13c-1.59 0-3.06-.87-3.06-2.68 0-2.24 2.08-2.93 3.9-2.93a11.63 11.63 0 0 1 2.28.26v-.31c0-1.09-.8-1.86-2.3-1.86a7.79 7.79 0 0 0-3.15.67v-1.79a10.72 10.72 0 0 1 3.35-.58c2.48 0 4 1.18 4 3.83v3.14a.57.57 0 0 0 .69.61zm-6.76-1.19a1.42 1.42 0 0 0 1.64 1.29 3.56 3.56 0 0 0 2.53-1v-1.51a10.21 10.21 0 0 0-1.9-.22c-1.1.01-2.27.35-2.27 1.45zM53.06 20.62a5.29 5.29 0 0 1 2.7.67v1.79a4.28 4.28 0 0 0-2.42-.73 2.89 2.89 0 1 0 0 5.76 5.26 5.26 0 0 0 2.55-.67v1.8a6.58 6.58 0 0 1-2.9.6 4.42 4.42 0 0 1-4.72-4.54 4.54 4.54 0 0 1 4.79-4.68zM65.84 28.22a2.07 2.07 0 0 0 .58-.11v1.4a3.41 3.41 0 0 1-1.24.22 1.75 1.75 0 0 1-1.75-1 5.08 5.08 0 0 1-3.3 1.13c-1.59 0-3.06-.87-3.06-2.68 0-2.24 2.08-2.93 3.9-2.93a11.63 11.63 0 0 1 2.28.26v-.31c0-1.09-.8-1.86-2.3-1.86a7.79 7.79 0 0 0-3.15.67v-1.79a10.72 10.72 0 0 1 3.35-.58c2.48 0 4 1.18 4 3.83v3.14a.57.57 0 0 0 .69.61zm-6.76-1.19a1.42 1.42 0 0 0 1.64 1.29 3.56 3.56 0 0 0 2.53-1v-1.51a10.21 10.21 0 0 0-1.9-.22c-1.11.01-2.27.35-2.27 1.45zM76.67 16.85v12.76h-1.76v-1.39a4.07 4.07 0 0 1-3.35 1.62 4.62 4.62 0 0 1 0-9.22 4 4 0 0 1 3.15 1.37v-5.14h2zm-4.76 5.48a2.9 2.9 0 0 0 0 5.8 3 3 0 0 0 2.79-1.84v-2.13a3.06 3.06 0 0 0-2.79-1.83zM82.99 20.62c3.48 0 4.68 2.81 4.12 5.34h-6.58c.22 1.57 1.75 2.22 3.35 2.22a6.41 6.41 0 0 0 2.77-.62v1.68a7.5 7.5 0 0 1-3.14.6c-2.68 0-5-1.53-5-4.61a4.39 4.39 0 0 1 4.48-4.61zm.09 1.62a2.39 2.39 0 0 0-2.57 2.26h4.85a2.06 2.06 0 0 0-2.28-2.26zM89.1 29.61v-8.75h1.73v1.09a4 4 0 0 1 2.92-1.33 3 3 0 0 1 2.73 1.4 4.33 4.33 0 0 1 3.06-1.4 3.21 3.21 0 0 1 3.32 3.52v5.47h-2V24.2a1.67 1.67 0 0 0-1.73-1.84 2.94 2.94 0 0 0-2.17 1.18V29.61h-2V24.2a1.67 1.67 0 0 0-1.73-1.84 3.11 3.11 0 0 0-2.32 1.35v5.91h-2zM111.47 20.86h2l-4.1 9.93c-.95 2.28-2.19 3-3.52 3a5 5 0 0 1-1.15-.15v-1.66a3 3 0 0 0 .89.13c.95 0 1.66-.67 2.17-2l.18-.44-4.16-8.82h2.13l3 6.6zM40.66 1.53v5a4 4 0 0 1 2.83-1.2A3.41 3.41 0 0 1 47.1 8.9v5.41h-2V9.15a1.9 1.9 0 0 0-2-2.1 3.08 3.08 0 0 0-2.44 1.46v5.8h-2V1.53h2zM52.43 2.42v3.12h3.17v1.71h-3.17v4c0 1.15.53 1.53 1.66 1.53a4.71 4.71 0 0 0 1.77-.35v1.68a7.14 7.14 0 0 1-2.35.38 2.68 2.68 0 0 1-3-2.88V7.23h-1.6V5.52h1.57V2.88zM58.1 14.29V5.54h1.73v1.09a4 4 0 0 1 2.92-1.33 3 3 0 0 1 2.73 1.4 4.33 4.33 0 0 1 3.06-1.4 3.21 3.21 0 0 1 3.32 3.52v5.47h-2V8.88a1.67 1.67 0 0 0-1.73-1.84 2.94 2.94 0 0 0-2.17 1.18V14.29h-2V8.88a1.67 1.67 0 0 0-1.73-1.84 3.11 3.11 0 0 0-2.32 1.35v5.91h-2zM74.72 1.52h1.95v12.76h-1.95zM15.44.02h-.16L0 1.62v28l15.28 9.09 15.28-9.09v-28zm13.12 28.45l-13.28 7.9L2 28.47V16.99l13.22 7.87v1.43l-9.07-5.4v1.38l9.11 5.47v1.46l-9.1-5.42v1.38l9.11 5.47 9.19-5.5V19.22l4.1-2.45v11.67zm0-13.16l-3.65 2.14-1.68 1-8-4.76v1.38l6.84 4.07h-.06l-.15.09-1 .57-5.64-3.36v1.38l4.45 2.65-1.05.7-3.36-2v1.38l2.21 1.3-2.25 1.35-13.16-7.82 13.17-7.92zm0-1.39L15.21 6.05l-13.2 7.86V3.41l13.28-1.39 13.28 1.39v10.51z"/>
+        </svg>
       </a>
     </p>
   </footer>
