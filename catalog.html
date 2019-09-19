@@ -31,7 +31,7 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="filter-infrastructure">
           <fieldset>
-            <legend>Инфраструктура:</legend>
+            <legend class="filter__heading">Инфраструктура:</legend>
             <ul class="filter__list">
               <li class="filter__list-item">
                 <input class="filter__input filter__input--checkbox" id="filter-swimming-pool" type="checkbox"
@@ -54,7 +54,7 @@
 
         <div class="filter-housing">
           <fieldset>
-            <legend>Тип жилья:</legend>
+            <legend class="filter__heading">Тип жилья:</legend>
             <ul class="filter__list">
               <li class="filter__list-item">
                 <input class="filter__input filter__input--checkbox" id="filter-hotel" type="checkbox"
@@ -88,9 +88,9 @@
             </label>
           </div>
           <div class="filter-range__slider">
-            <button class="filter-range__btn filter-range__btn--left" type="button">левый ползунок</button>
+            <div class="filter-range__btn filter-range__btn--left">левый ползунок</div>
             <div class="filter-range__line"></div>
-            <button class="filter-range__btn filter-range__btn--right" type="button">правый ползунок</button>
+            <div class="filter-range__btn filter-range__btn--right">правый ползунок</div>
           </div>
         </div>
         <button class="filter__btn" type="submit">Показать</button>

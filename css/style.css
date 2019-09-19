@@ -55,6 +55,7 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
+  border: 0;
 }
 
 .filter-result__link {
@@ -99,6 +100,18 @@ a {
 .filter-result__link:active {
   color: #000000;
   text-decoration: none;
+}
+.filter__btn {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+.filter__btn:hover,
+.filter__btn:focus {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .btn-brown:hover,
@@ -236,6 +249,17 @@ a {
 
 .search__form {
   display: none;
+
+  font-weight: bold;
+}
+.search__input,
+.search__btn-minus,
+.search__btn-plus {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: inherit;
+  background-color: #f2f2f2;
+  border: 0;
 }
 
 /* sedona catalog */
@@ -246,8 +270,33 @@ a {
 
 /* sedona catalog filter */
 .filter {
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #94B9D2;
   background-image: url(../img/hotels-bg.jpg);
   background-repeat: no-repeat;
+}
+
+.filter fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter__heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-range__min input,
+.filter-range__max input {
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+}
+
+.filter-range__btn {
+  content: url(../img/filter-button.svg);
 }
 
 .filter-result__find {
