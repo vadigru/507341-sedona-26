@@ -90,10 +90,11 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="search__first-text">Заинтересовались?</p>
         <p class="search__second-text">Укажите предполагаемые даты поездки, <span>и мы покажем вам лучшие предложения гостиниц в седоне</span></p>
-        <a class="btn-brown search__btn-toggle" href="">Поиск гостиницы в седоне</a>
-        <div class="form-container">
+        <a class="btn-brown search__btn-toggle" href="">Поиск гостиницы в Седоне</a>
+        <div class="search__container">
           <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="search__date">
+            <div class="search__date-block">
+              <p class="search__date">
               <label class="search__label search__form-date-in" for="date-in">Дата заезда: </label>
               <input class="search__input" id="date-in" name="date-in" type="text" value="24 апреля 2017">
             </p>
@@ -101,17 +102,18 @@
               <label class="search__label search__form-date-out" for="date-out">Дата выезда: </label>
               <input class="search__input" id="date-out" name="date-out" type="text" value="4 июля 2017">
             </p>
+            </div>
             <div class="search__people-count">
               <p class="search__adults">
-                <label class="search__label search__label-adults" for="input-adults">Взрослые: </label>
+                <label class="search__label-adults" for="input-adults">Взрослые: </label>
                 <button class="search__btn-minus" type="button" aria-label="Минус">-</button>
-                <input class="search__input search__input-adults" id="input-adults" name="input-adults" type="text" value="2">
+                <input class="search__input-adults" id="input-adults" name="input-adults" type="text" value="2">
                 <button class="search__btn-plus" type="button" aria-label="Плюс">+</button>
               </p>
               <p class="search__kids">
-                <label class="search__label search__label-kids" for="input-kids">Дети: </label>
+                <label class="search__label-kids" for="input-kids">Дети: </label>
                 <button class="search__btn-minus" type="button" aria-label="Минус">-</button>
-                <input class="search__input search__input-kids" id="input-kids" name="input-kids" type="text" value="0">
+                <input class="search__input-kids" id="input-kids" name="input-kids" type="text" value="0">
                 <button class="search__btn-plus" type="button" aria-label="Плюс">+</button>
               </p>
             </div>
@@ -126,7 +128,9 @@
     </main>
 
     <footer class="social">
+
       <p class="hashtag">#visitsedona</p>
+
       <ul class="social__list">
         <li class="social__item">
           <a class="btn-blue social__btn twitter" href="">
@@ -152,8 +156,9 @@
           </a>
         </li>
       </ul>
+
       <p class="academy">
-        website by
+        <span class="academy_web"> website by</span>
         <a class="academy__link" href="https://htmlacademy.ru/intensive/htmlcss">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
             <path
@@ -161,6 +166,7 @@
           </svg>
         </a>
       </p>
+
     </footer>
   </div>
 </body>
