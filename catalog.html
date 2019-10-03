@@ -82,17 +82,15 @@
               <div class="filter-range__block">
                 <label class="filter-range__min">
                   от
-                  <input type="text" name="price-min" value="0">
+                  <input type="text" name="price-min" value="0" aria-label="Минимальная цена за сутки">
                 </label>
                 <label class="filter-range__max">
                   до
-                  <input type="text" name="price-max" value="3000">
+                  <input type="text" name="price-max" value="3000" aria-label="Максимальная цена за сутки">
                 </label>
               </div>
               <div class="filter-range__slider">
                 <div class="filter-range__btn filter-range__btn--left"></div>
-                <div class="filter-range__line filter-range__line--grey"></div>
-                <div class="filter-range__line filter-range__line--white"></div>
                 <div class="filter-range__btn filter-range__btn--right"></div>
               </div>
               <button class="filter__btn" type="submit">Показать</button>
@@ -105,17 +103,17 @@
       <section class="filter-result">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="filter-result__block">
-          <p class="filter-result__find">Найдено: <span class="filter-result__result-amount">3</span></p>
+          <p class="filter-result__find">Найдено: <span>3</span></p>
           <p class="filter-result__sorting">Сортировка:</p>
           <ul class="filter-result__list">
-            <li class="filter-result__list-item filter-result__list-item--active">
-              <a class="link-text filter-result__link filter-result__link--active" href="">По цене</a>
+            <li class="filter-result__list-item">
+              <a class="link-text filter-result__link filter-result__link--active" href=""><span>По цене</span></a>
             </li>
             <li class="filter-result__list-item">
-              <a class="link-text filter-result__link" href="">По типу</a>
+              <a class="link-text filter-result__link" href=""><span>По типу</span></a>
             </li>
             <li class="filter-result__list-item">
-              <a class="link-text filter-result__link" href="">По рейтингу</a>
+              <a class="link-text filter-result__link" href=""><span>По рейтингу</span></a>
             </li>
           </ul>
         </div>
@@ -169,7 +167,7 @@
 
               </div>
               <p class="hotel__rating-block">
-                <span class="hotel__stars hotel-1"></span>
+                <span class="hotel__stars hotel__stars--four"></span>
                 <span class="hotel__rating">рейтинг: 8.5</span>
               </p>
             </article>
@@ -202,7 +200,7 @@
 
               </div>
               <p class="hotel__rating-block">
-                <span class="hotel__stars hotel-2"></span>
+                <span class="hotel__stars hotel__stars--three"></span>
                 <span class="hotel__rating">рейтинг: 8.9</span>
               </p>
 
@@ -236,7 +234,7 @@
 
               </div>
               <p class="hotel__rating-block">
-                <span class="hotel__stars hotel-3"></span>
+                <span class="hotel__stars hotel__stars--two"></span>
                 <span class="hotel__rating">рейтинг: 9,2</span>
               </p>
             </article>
