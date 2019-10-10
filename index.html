@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -87,11 +87,13 @@
       </section>
 
       <section class="search">
-        <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p class="search__first-text">Заинтересовались?</p>
-        <p class="search__second-text">Укажите предполагаемые даты поездки, <span>и мы покажем вам лучшие предложения
-            гостиниц в седоне</span></p>
-        <a class="btn-brown search__btn-toggle" href="">Поиск гостиницы в Седоне</a>
+        <div class="search__block">
+          <h2 class="visually-hidden">Поиск гостиницы</h2>
+          <p class="search__first-text">Заинтересовались?</p>
+          <p class="search__second-text">Укажите предполагаемые даты поездки, <span>и мы покажем вам лучшие предложения
+              гостиниц в седоне</span></p>
+          <a class="btn-brown search__btn-toggle" href="">Поиск гостиницы в Седоне</a>
+        </div>
         <div class="search__container">
           <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="search__date-block">
@@ -99,12 +101,14 @@
                 <label class="search__label search__form-date-in">
                   Дата заезда:
                   <input class="search__input" id="date-in" name="date-in" type="text" value="24 апреля 2017">
+                  <span class="search__calendar-icon" tabindex="0" aria-label="Выбор даты заезда"></span>
                 </label>
               </p>
               <p class="search__date">
                 <label class="search__label search__form-date-out">
                   Дата выезда:
                   <input class="search__input" id="date-out" name="date-out" type="text" value="4 июля 2017">
+                  <span class="search__calendar-icon" tabindex="0" aria-label="Выбор даты выезда"></span>
                 </label>
               </p>
             </div>
@@ -139,9 +143,9 @@
     </main>
 
     <footer class="social">
-      <p class="hashtag">#visitsedona</p>
-      <ul class="social__list">
-        <li class="social__item">
+      <p class="social__item hashtag">#visitsedona</p>
+      <ul class="social__item social__list">
+        <li class="social__list-item">
           <a class="btn-blue social__btn twitter" href="">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15">
               <path fill="#FFF"
@@ -149,14 +153,14 @@
             </svg>
           </a>
         </li>
-        <li class="social__item">
+        <li class="social__list-item">
           <a class="btn-blue social__btn facebook" href="">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22">
               <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
             </svg>
           </a>
         </li>
-        <li class="social__item">
+        <li class="social__list-item">
           <a class="btn-blue social__btn youtube" href="">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16">
               <path fill="#FFF"
@@ -165,7 +169,7 @@
           </a>
         </li>
       </ul>
-      <p class="academy">
+      <p class="social__item academy">
         <span class="academy__web"> website by</span>
         <a class="academy__link" href="https://htmlacademy.ru/intensive/htmlcss">
           <svg class="academy-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
@@ -177,6 +181,7 @@
     </footer>
 
   </div>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>
