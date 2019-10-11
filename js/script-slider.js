@@ -7,6 +7,7 @@
   var PIN_SIZE = 20;
   var PIN_SIZE_HALF = PIN_SIZE / 2;
   var PCT = 100;
+  var COEFFECIENT = 40;
 
   var priceChooser = document.querySelector('.filter-range');
   var priceChooserMin = priceChooser.querySelector('input[name="price-min"]');
@@ -32,7 +33,7 @@
 
   // display the position in percent relative to pixels -----------------------
   var currentPositionInPct = function (currentPosition) {
-    return Math.round((currentPosition * PCT / MAX) * 40);
+    return Math.round((currentPosition * PCT / MAX) * COEFFECIENT);
   };
   // listener for left button -------------------------------------------------
   priceChooserLeftBtn.addEventListener('mousedown', function (evt) {

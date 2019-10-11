@@ -552,7 +552,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-    
+
 .search__calendar-icon::after {
   display: block;
   content: "";
