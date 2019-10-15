@@ -73,5 +73,4 @@
   window.addEventListener('keydown', onEscClose);
   btnToggle.addEventListener('click', onClickToggle);
   form.addEventListener('submit', onSubmitFormHandle);
-
 }());
