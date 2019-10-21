@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic");
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -48,6 +50,16 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
 }
 
 .about__list,
@@ -168,30 +180,36 @@ img {
   background-color: #ffffff;
 }
 
-.intro__bg {
+.intro {
+  padding-top: 76px;
   background-color: #3D729E;
-  background-image: url("../img/intro-polygon.png"),
-    url("../img/intro-welcome.png"),
+  background-image: url("../img/intro-polygon.svg"),
     url("../img/intro-background.jpg");
   background-repeat: no-repeat;
-  background-position: bottom -1px center,
-    top 75px center,
+  background-position: top 452px center,
     top -56px center;
-  min-height: 508px;
+}
+
+.intro img {
+  margin-bottom: 72px;
 }
 
 .intro__block {
-  width: 490px;
-  margin-top: 60px;
+  letter-spacing: 0.1px;
+  padding-top: 45px;
+  padding-bottom: 37px;
   margin-right: auto;
-  margin-bottom: 51px;
   margin-left: auto;
+  background-color: #ffffff;
 }
 
 .intro__title {
   font-size: 21px;
   font-weight: bold;
+  width: 490px;
+  margin-right: auto;
   margin-bottom: 27px;
+  margin-left: auto;
 }
 
 /* sedona-index -- about ----------------------------------------- */
@@ -219,7 +237,7 @@ img {
 
 .about__item-first-row .dash,
 .about__item-third-row .dash {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .about__item-second-row .about__heading {
@@ -228,27 +246,19 @@ img {
 
 .about__item-fourth-row {
   background-color: #efefef;
-  -webkit-box-shadow: 0 0.5px 0px 0 #efefef;
-          box-shadow: 0 0.5px 0px 0 #efefef;
-
+  -webkit-box-shadow: 0 1px 0px 0 #efefef;
+          box-shadow: 0 1px 0px 0 #efefef;
 }
 
 .about__heading {
   font-size: 21px;
   font-weight: bold;
-  width: 150px;
-}
-
-.about__heading span {
-  white-space: nowrap;
-  width: 150px;
+  width: 160px;
 }
 
 .about__city,
 .about__brige {
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 45px;
   width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,21 +275,34 @@ img {
   background-color: #81b3d2;
 }
 
-.about__city > .about__heading,
-.about__brige > .about__heading {
-  margin-bottom: 25px;
+.about__city {
+  padding-top: 25px;
+  padding-bottom: 43px;
 }
 
-.about__city > .about__number,
-.about__brige > .about__number {
-  margin-bottom: 7px;
+.about__city .about__number {
+  margin-bottom: 5px;
 }
 
-.about__city > .about__text {
+.about__city .about__text {
+  letter-spacing: 0.1px;
   width: 285px;
 }
 
-.about__brige > .about__text {
+.about__brige {
+  padding-top: 22px;
+  padding-bottom: 43px;
+}
+
+.about__brige .about__heading {
+  margin-bottom: 18px;
+}
+
+.about__brige .about__number {
+  margin-bottom: 1px;
+}
+
+.about__brige .about__text {
   width: 310px;
 }
 
@@ -310,7 +333,7 @@ img {
 
 .about__food::before {
   content: url("../img/icon-food.svg");
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .about__gift::before {
@@ -327,8 +350,8 @@ img {
 }
 
 .about__place {
-  padding-top: 27px;
-  padding-bottom: 45px;
+  padding-top: 26px;
+  padding-bottom: 44px;
   width: 33.333333%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,27 +375,17 @@ img {
   margin-bottom: 7px;
 }
 
-.about__square > .about__text,
-.about__road > .about__text {
+.about__square .about__text,
+.about__road .about__text {
   width: 270px;
 }
 
-.about__tourists > .about__text {
+.about__tourists .about__text {
   width: 250px;
 }
 
 .about__bg {
   min-width: 800px;
-  background-repeat: no-repeat;
-  background-color: #81b3d2;
-}
-
-.about__city-bg {
-  background-image: url("../img/about-first-bg.jpg");
-}
-
-.about__brige-bg {
-  background-image: url("../img/about-second-bg.jpg");
 }
 
 .dash {
@@ -389,27 +402,26 @@ img {
   z-index: 4;
 }
 .search__block {
-  padding-top: 49px;
+  padding-top: 51px;
   background-color: #ffffff;
+  position: relative;
+  z-index: inherit;
 }
 
 .search__first-text {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
+  letter-spacing: 0.1px;
   margin: 0;
   margin-bottom: 25px;
 }
 
 .search__second-text {
-  width: 435px;
+  width: 490px;
   line-height: 23px;
   margin: 0 auto;
   margin-bottom: 48px;
-}
-
-.search__second-text span {
-  white-space: nowrap;
 }
 
 .search__btn-toggle {
@@ -417,29 +429,32 @@ img {
   width: 568px;
   font-size: 21px;
   font-weight: bold;
+  text-transform: uppercase;
   color: #ffffff;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 31px;
   padding-right: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
   padding-left: 40px;
   background-color: #766357;
+  border: 0;
+  cursor: pointer;
 }
 
 .search__container {
   width: 568px;
   min-height: 365px;
   margin: 0 auto;
-  padding-top: 41px;
+  padding-top: 42px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   position: absolute;
+  z-index: 1;
   left: calc(50% - 284px);
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  z-index: -1;
 }
 
 .search__container--hide {
@@ -534,38 +549,29 @@ img {
   letter-spacing: 0.3px;
 }
 
-.search__label {
-  width: 458px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.search__calendar {
+  font-size: 0;
+  position: absolute;
+  top: 6px;
+  right: 3px;
+  background-color: transparent;
+  border: 0;
 }
 
-.search__calendar-icon:hover {
+.search__calendar::after {
+  content: url("../img/icon-calendar.svg");
+}
+
+.search__calendar:hover {
   cursor: pointer;
 }
 
-.search__calendar-icon::after {
-  content: url("../img/icon-calendar.svg");
-  width: 21px;
-  height: 22px;
-  position: absolute;
-  top: 7px;
-  right: 9px;
-}
-
-.search__calendar-icon:hover::after,
-.search__calendar-icon:focus::after {
+.search__calendar:hover::after,
+.search__calendar:focus::after {
   content: url("../img/icon-calendar-hover.svg");
 }
 
-.search__calendar-icon:active::after {
+.search__calendar:active::after {
   content: url("../img/icon-calendar-active.svg");
 }
 
@@ -573,18 +579,18 @@ img {
   font-weight: bold;
   text-transform: inherit;
   padding-left: 13px;
-  width: 345px;
+  width: 346px;
   height: 37px;
   background-color: #f2f2f2;
   border: 0;
 }
 
-.search__form-date-in .search__input{
-  margin-left: 18px;
+.search__form-date-in {
+  margin-right: 16px;
 }
 
-.search__form-date-out .search__input{
-  margin-left: 15px;
+.search__form-date-out {
+  margin-right: 13px;
 }
 
 .search__input::-ms-clear {
@@ -610,7 +616,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .search__adults {
@@ -657,7 +663,6 @@ img {
 }
 
 .search__people-count {
-  display: inline-block;
   background-color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,12 +733,17 @@ img {
 .map {
   width: 100%;
   position: absolute;
-  top: 288px;
-  z-index: -2;
+}
+
+.map img {
+  position: relative;
+  z-index: -3;
 }
 
 .map iframe {
   float: right;
+  position: relative;
+  z-index: -3;
 }
 
 /* sedona-catalog -- filter -------------------------------------- */
@@ -1051,32 +1061,22 @@ img {
   padding-top: 3px;
 }
 
-.filter-result__list-item span {
-  display: block;
+.filter-result__link {
+  color: #cacaca;
   height: 17px;
+  display: block;
   border-bottom: 1px dotted #81b3d2;
 }
 
 
-.filter-result__list-item span:active {
-  color: #000000;
-  border-bottom: 0;
-}
-
-.filter-result__link--active span {
+.filter-result__link--active {
   color: #81b3d2;
-  text-decoration: none;
-  border-bottom: 0;
-}
-
-.filter-result__link {
-  line-height: 18px;
-  color: #cccccc;
+  border-bottom: 1px dotted transparent;
 }
 
 .filter-result__link:active {
   color: #000000;
-  text-decoration: none;
+  border-bottom: 1px dotted transparent;
 }
 
 .filter-result__link:hover path,
@@ -1102,11 +1102,14 @@ img {
           align-items: center;
 }
 
+.filter-result__arrows-block .filter-result__link {
+  border-bottom: 1px dotted transparent;
+}
+
 .filter-result__arrow-up {
   display: block;
-  padding-top: 3px;
+  padding-top: 2px;
   margin-right: 12px;
-
 }
 
 .filter-result__arrow-down {
@@ -1120,6 +1123,10 @@ img {
 }
 
 /* sedona-catalog -- hotels -------------------------------------- */
+.hotels {
+  margin-bottom: -3px;
+}
+
 .hotels__list-item {
   padding-right: 72px;
   padding-left: 72px;
@@ -1150,6 +1157,10 @@ img {
 }
 
 .hotel__text-block {
+  white-space: nowrap;
+  width: 700px;
+  margin-top: -3px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1160,7 +1171,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: -3px;
 }
 
 .hotel__title {
@@ -1239,7 +1249,6 @@ img {
 }
 
 .hotel__link {
-  font-size: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1268,6 +1277,10 @@ img {
 }
 
 .hotel__stars {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
   height: 18px;
   background-image: url("../img/star.svg");
   background-repeat: space;
@@ -1305,10 +1318,11 @@ img {
 /* sedona -- footer -----------------------------------------------------------*/
 .social {
   line-height: 26px;
-  height: 122px;
+  height: 120px;
   padding-left: 132px;
   padding-right: 100px;
-  padding-bottom: 2px;
+  margin-top: 3px;
+  margin-bottom: 0;
   background-color: #ffffff;
   opacity: 0.9;
   display: -webkit-box;
@@ -1345,12 +1359,12 @@ img {
 }
 
 .social__btn {
+  font-size: 0;
+  text-align: center;
   display: block;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
-  text-align: center;
-  line-height: 52px;
 }
 
 .social__btn:active path,
@@ -1359,8 +1373,16 @@ img {
   background-color: #5496BD;
 }
 
+.twitter {
+  padding-top: 17px;
+}
+
 .facebook {
-  line-height: 58px;
+  padding-top: 13px;
+}
+
+.youtube {
+  padding-top: 16px;
 }
 
 .academy {
