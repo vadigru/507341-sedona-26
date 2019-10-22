@@ -1273,7 +1273,7 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  }
+}
 
 .hotel__stars {
   text-indent: 100%;
