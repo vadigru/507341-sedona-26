@@ -1135,32 +1135,25 @@ img {
 
 .hotel {
   line-height: 21px;
-  height: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .hotel__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .hotel__text-block {
-  white-space: nowrap;
   width: 700px;
   margin-top: -3px;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1177,13 +1170,14 @@ img {
   font-size: 21px;
   letter-spacing: 0.3px;
   margin: 0;
+  margin-bottom: 7px;
   padding: 0;
 }
 
 .hotel__price-block {
   color: #333333;
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1191,36 +1185,44 @@ img {
 
 .hotel__type {
   display: block;
-  width: 110px;
+  min-width: 110px;
+  max-width: 50%;
   margin-right: 6px;
 }
 
 .hotel__price {
   display: block;
+  min-width: 140px;
+  max-width: 50%;
 }
 
 .hotel__btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   padding: 0;
-  padding-bottom: 3px;
 }
 
 .hotel__btn-more,
 .hotel__btn-booking {
-  padding-top: 4px;
+  max-width: 50%;
+  padding-top: 3px;
   padding-right: 16px;
-  padding-bottom: 4.5px;
+  padding-bottom: 3px;
   padding-left: 17px;
   font-weight: bold;
   color: #ffffff;
 }
 
 .hotel__btn-more {
+  min-width: 110px;
+  margin-right: 6px;
   background-color: #81b3d2;
-  margin-right: 3px;
 }
 
 .hotel__btn-booking {
+  min-width: 140px;
   background-color: #766357;
 }
 
@@ -1252,15 +1254,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .hotel__rating-block {
   position: relative;
   right: 0;
-  height: 90px;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1274,13 +1273,12 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
+  }
 
 .hotel__stars {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-
   height: 18px;
   background-image: url("../img/star.svg");
   background-repeat: space;
