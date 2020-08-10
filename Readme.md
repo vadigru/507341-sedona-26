@@ -1,8 +1,8 @@
 # Личный проект «Sedona»
 
-* Студент: [Vadim Grunenko](https://up.htmlacademy.ru/htmlcss/26/user/507341).
-* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
-* Онлайн версия: [Онлайн версия](https://vadigru.github.io/sedona).
+* Студент: [Vadim Grunenko](https://up.htmlacademy.ru/htmlcss/26/user/507341)
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer)
+* Онлайн версия: [https://vadigru.github.io/sedona]
 
 ---
 
